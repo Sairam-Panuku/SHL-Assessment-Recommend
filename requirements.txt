@@ -8,3 +8,5 @@ flask
 streamlit
 scikit-learn
 openpyxl
+gunicorn
+flask-cors
