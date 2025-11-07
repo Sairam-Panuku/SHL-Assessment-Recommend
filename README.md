@@ -194,6 +194,6 @@ shl_assessment_recommender/
 **Developed by:**
 👨‍💻 *Panuku Sairam*
 📧 [sairampanuku123@gmail.com](mailto:sairampanuku123@gmail.com)
-🌐 [LinkedIn](https://www.linkedin.com/in/sairam-panuku)
+🌐 [LinkedIn](https://www.linkedin.com/in/sairam-panuku-143bb4281)
 
 ---
