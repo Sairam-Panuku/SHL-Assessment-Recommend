@@ -1,10 +1,3 @@
-Absolutely ✅ Sairam — here’s a clean, professional **`README.md`** ready for your GitHub repo.
-
-It’s written exactly how SHL expects:
-
-* Concise but detailed
-* Includes your project purpose, setup, API docs, and deployment details
-* Perfect for evaluation and submission
 
 ---
 
