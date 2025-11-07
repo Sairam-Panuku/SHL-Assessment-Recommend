@@ -1,12 +1,11 @@
+streamlit
 pandas
 numpy
-beautifulsoup4
-requests
-sentence-transformers
+sentence-transformers==2.2.2
+torch==2.0.1+cpu
+--extra-index-url https://download.pytorch.org/whl/cpu
 faiss-cpu
-flask
-streamlit
 scikit-learn
 openpyxl
-gunicorn
-flask-cors
+beautifulsoup4
+requests
