@@ -5,13 +5,12 @@ import numpy as np
 import pickle
 
 
-
 print(" Initializing SHL Recommender...")
 
-# Load model
+
 model = SentenceTransformer('all-MiniLM-L6-v2')
 
-# Load corpus and FAISS index
+
 with open("app/models/corpus.pkl", "rb") as f:
     corpus = pickle.load(f)
 
@@ -27,16 +26,18 @@ def get_recommendations(query, top_k=10):
     query_vector = model.encode([query])
     query_vector = np.array(query_vector).astype("float32")
 
-    # Search FAISS index
+    
     distances, indices = index.search(query_vector, top_k)
 
-    # Get matched items
+    
     results = [corpus[i] for i in indices[0]]
     
-    # Filter URLs only (SHL product links)
+    
     urls = [r for r in results if "https://www.shl.com" in r]
     
     return urls[:top_k]
+
+
 
 
 if __name__ == "__main__":

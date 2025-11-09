@@ -6,18 +6,22 @@ import pickle
 
 app = Flask(__name__)
 
-
-print(" Starting Flask API...")
+# ===============================
+# LOAD MODEL AND INDEX
+# ===============================
+print("🚀 Starting Flask API...")
 
 model = SentenceTransformer('all-MiniLM-L6-v2')
 with open("app/models/corpus.pkl", "rb") as f:
     corpus = pickle.load(f)
 index = faiss.read_index("app/models/faiss_index.bin")
 
-print(f" Model & Index Loaded: {len(corpus)} items available.")
+print(f"✅ Model & Index Loaded: {len(corpus)} items available.")
 
 
-
+# ===============================
+# ROUTES
+# ===============================
 @app.route("/health", methods=["GET"])
 def health():
     return jsonify({
